@@ -1,9 +1,11 @@
-const today = new Date();
+{
+  const today = new Date();
 
-const person = {
-  age: 20
-};
+  const person = {
+    age: 20
+  };
 
-class Color {}
+  class Color {}
 
-const red = new Color();
+  const red = new Color();
+}

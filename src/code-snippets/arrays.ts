@@ -8,7 +8,7 @@ const name123 = names[0];
 console.log(name123.length);
 
 // ts 会阻止往数组中添加不同类型的值
-names.push(1);
+// names.push(1);
 
 names.map((item): string => item);
 

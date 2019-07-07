@@ -49,8 +49,8 @@ function returnUndefined(): void {}
 // 最好把配置项中的 strictNullChecks 设置为 true,
 // 如果你开了，52/53 行会报错，没开就不报
 const nullValue: null = null;
-const undefinedValue: undefined = nullValue; // ❌
-const a: string = nullValue; // ❌
+// const undefinedValue: undefined = nullValue; // ❌
+// const a: string = nullValue; // ❌
 
 // never
 // 文档中提到如果一个函数一定会抛异常或者是个无限循环，就可以使用 never
@@ -71,6 +71,6 @@ const o1: object = {};
 // 类型断言
 // 但是有前提，不是说可以随意断言的，比如下面的代码，不能直接断言一个 number 是一个 string.
 const nn1: number = 2;
-(<string>nn1).split("2"); // ❌
+// (<string>nn1).split("2"); // ❌
 const nn2: any = 2;
 (nn2 as string).split("5"); // ✅
